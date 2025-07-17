@@ -48,17 +48,17 @@ void fft(double real[FFT_SIZE], double img[FFT_SIZE], double real_twid[FFT_SIZE/
 }
 
 int main(){
-    double data_x[size];
-    double data_y[size];
-    double img[size];
-    double real[size];
+    double data_x[FFT_SIZE];
+    double data_y[FFT_SIZE];
+    double img[FFT_SIZE];
+    double real[FFT_SIZE];
     int i;
 
     //set up twiddles...
     double twoPI = 6.28318530717959;
     double typed;
     int n, N;
-    N = size;
+    N = FFT_SIZE;
 
     //Pre-calc twiddles
     for(n=0; n<(N>>1); n++){
@@ -68,7 +68,7 @@ int main(){
     }
 
     //Init data
-    for(i=0; i < size; i++) {
+    for(i=0; i < FFT_SIZE; i++) {
         data_x[i] = (double)(i);
         data_y[i] = (double)(i);
     }
