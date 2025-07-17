@@ -56,7 +56,6 @@ int main(){
     int i;
 
     //set up twiddles...
-    double twoPI = 6.28318530717959;
     double typed;
     int n, N;
     N = FFT_SIZE;
