@@ -4,6 +4,7 @@ Copied from https://github.com/breagen/MachSuite/blob/master/fft/strided/
 
 #include <stdio.h>
 #include <stdlib.h>
+#include <math.h>
 
 #define FFT_SIZE 1024
 #define twoPI 6.28318530717959
