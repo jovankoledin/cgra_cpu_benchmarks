@@ -6,7 +6,7 @@ Copied from https://github.com/breagen/MachSuite/blob/master/fft/strided/
 #include <stdlib.h>
 #include <math.h>
 
-#define FFT_SIZE 16
+#define FFT_SIZE 8
 #define twoPI 6.28318530717959
 
 void fft(double real[FFT_SIZE], double img[FFT_SIZE], double real_twid[FFT_SIZE/2], double img_twid[FFT_SIZE/2]);
